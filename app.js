@@ -10,7 +10,7 @@ app.use('/contact', contactRouter)
 
 
 app.get('*', (req, res) => {
-    res.send('<h1>Try Get Request</h1>')
+    res.send('<h1>Welcome</h1>')
 })
 
 app.listen(PORT, ()=>{
