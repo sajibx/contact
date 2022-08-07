@@ -9,9 +9,9 @@ app.use(express.json())
 app.use('/contact', contactRouter)
 
 
-// app.get('*', (req, res) => {
-//     res.send('<h1>No Data</h1>')
-// })
+app.get('*', (req, res) => {
+    res.send('<h1>Try Get Request</h1>')
+})
 
 app.listen(PORT, ()=>{
     console.log("running on 8080")
